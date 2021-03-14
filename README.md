@@ -9,3 +9,7 @@ Now that I don't have right training to teach you everything from scratch I'm go
 4) If any changes are made please leave a note why it should be modified. 
 
 Thank you for your time.
+
+
+Note: 
+Soon the webpage will be uploaded to my website inside a directory called 'dupadhyay11'. Therefore, the url of the webpage will look like: https://diggajupadhyay.xyz/dupadhyay11
