@@ -7,3 +7,12 @@ body {
 dt {
     padding-left: 20px;;
 }
+
+iframe {
+    position:relative;
+}
+
+#decor-link {
+    background-color: khaki;
+    border: yellowgreen 1px solid;
+}
