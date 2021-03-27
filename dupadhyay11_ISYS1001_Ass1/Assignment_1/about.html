@@ -1,0 +1,101 @@
+<!--
+    Author: Diggaj Upadhyay
+    Student ID: 23771774
+    Website: https://diggajupadhyay.com.np/
+    github personal: https://github.com/diggajupadhyay 
+    github college : https://github.com/23771774
+    twitter: https://twitter.com/DiggajUpadhyay
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diggaj Upadhyay - About Me</title>
+    <link rel="stylesheet" href="./css/styles_CA3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a id="header" href="http://infotech.scu.edu.au/~dupadh11" style="font-size: x-large;">Diggaj Upadhyay -
+            23771774</a>
+    </div>
+
+    <div class="main-content" style="text-align: center;">
+
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <h2>About Me?</h2>
+        <p style="text-align: left;">I am a Linux Enthusiast. I love playing around with Operating Systems. Most of the
+            time I am lurking around
+            Linux Distributions
+            seeing what they offer and what built-in tools are available, how upgrade/downgrade system works, how
+            package management system works,
+            what is containerized system, etc. I have about 30 different OS running on virtual machine who follows their
+            own philosophy of handling system.
+            I have also created my own first raspPI os based on debian but, it's very out dated and I don't have much
+            time to invest on that project since it doesn't pay me. (If someone who is interested can download and use
+            it from <span><a href="https://diggajupadhyay.com.np/downloads/">rasPI OS</a></span>)
+        </p>
+        <br>
+        <h2>Uploading files to infotech using command line</h2>
+        <p>I personally use script to do these kind of work but, to make things clear I will share a simple instruction
+            on how to
+            upload your website directory(folder) i.e Assignment_1/ to the remote directory where your public_html/
+            may be hosted.
+        </p>
+        <a target="_blank" href="images/rsync.png">
+            <!-- Max width for responsive because it would float ouside when zoomed out-->
+            <img src="images/rsync.png" alt="my Linux Desktop" style="max-width: 250px;">
+        </a>
+        <p>Follow the Instructions if you can open a bash/zsh shell. Then, type in the commands but, be careful to change
+            the variables and paths as it is not the same</p>
+        <ol>
+            <blockquote style="font-weight:900;">$ rsync -azvP index.html about.html contact.html readme.txt css images \
+                yourusername@infotech.scu.edu.au:public_html/
+            </blockquote>
+            <p style="text-align: left;">Note: Replace the name of files you want to transfer and your username.</p>
+            <p style="text-align: left;"><i>if everything is correct it should ask you for the password and enter your given password.</i></p>
+            <p style="text-align: left;">And, that was it! Your files and folders have been uploaded to the website in a matter of minute without even dealing with
+                ftp clients like Filezilla.
+            </p>
+        </ol>
+
+        <br>
+        <h2>Contact Me</h2>
+        <p>
+            Email me at:
+            <span id="lekh"><a href="mailto:d.upadhyay.11@student.scu.edu.au">Diggaj Upadhyay</a></span>
+        </p>
+
+
+        <address id="ending">
+            Written by Diggaj Upadhyay<br>
+            https://diggajupadhyay.com<br>
+            Westralia
+        </address>
+
+        <footer>
+            <p>
+            <footer>&copy; Copyright 2021 <a id="foot_cred" href="http://infotech.scu.edu.au/~dupadh11/">dupadh11</a>
+            </footer>
+            </p>
+        </footer>
+
+    </div>
+
+
+
+</body>
+
+</html>
