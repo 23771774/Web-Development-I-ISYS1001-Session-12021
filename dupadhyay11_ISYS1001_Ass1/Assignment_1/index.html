@@ -1,3 +1,13 @@
+<!--
+    Author: Diggaj Upadhyay
+    Student ID: 23771774
+    Website: https://diggajupadhyay.com.np/
+    github personal: https://github.com/diggajupadhyay 
+    github college : https://github.com/23771774
+    twitter: https://twitter.com/DiggajUpadhyay
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diggaj Upadhyay - Portfolio</title>
-    <link rel="stylesheet" href="css/styles_CA3.css">
+    <link rel="stylesheet" href="./css/styles_CA3.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700&display=swap"
         rel="stylesheet">
@@ -13,55 +23,87 @@
 
 <body>
 
-    <div class="heading">
-        <div class="image">
-            <h1 style="text-align: center;">Diggaj Upadhyay</h1>
-            <h4 style="text-align: center;">23771774</h4>
-            <hr style="width: 120px;">
-        </div>
-
+    <div class="navbar">
+        <a id="header" href="http://infotech.scu.edu.au/~dupadh11" style="font-size: x-large;">Diggaj Upadhyay -
+            23771774</a>
     </div>
 
-    <div class="main-content">
+    <div class="main-content" style="text-align: center;">
 
+        <ul class="breadcrumb">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <br>
         <h2>Background</h2>
-        <p style="text-align:left;">I am Diggaj Upadhyay. I am from Nepal and I have recently moved to Australia
+        <p>I am Diggaj Upadhyay. I am from Nepal and I have recently moved to Australia
             to accomplish my further studies. I am an indoor person who prefer to read books,
             play Guitar / listen to music, play virtual games, etc. However, I enjoy
-            going out and meeting friends, hiking, bicycling, swimming, etc.
-            <br>
+            going out and meeting friends, hiking, bicycling, swimming, etc. <span><a href="about.html" target="_blank">Read
+                    more..</a></span>
+            <br><br><br>
         <h2>What am I studying?</h2>
         <p>I am studying Bachelors of Software Development in Southern Cross University in
             Western Australia. As a person who is very curious in working with computers
             I am very excited to learn what my Campus has to offer.
-        </p>
+        </p> <br><br>
         <h2>What is my expectation?</h2>
         <p>So far we have begun with Web Development in our season 1 Year 1 and I am already
             learning so much from it. I hope to get a better understanding of the real world
             problem solving techniques and what we may situations we may encounter and
-            where to look solutions for, etc.</p>
-
-        <h3 style="text-align:left;">My Favourite Food</h3>
+            where to look solutions for, etc.</p><br><br>
+        <h3>My Favourite Food</h3>
         <ul>
             <li>Tteokbokki</li>
             <li>Grilled Eel</li>
             <li>Mo:Mo</li>
-        </ul>
+        </ul> <br>
         <h3>My Favourite Movies</h3>
         <ol>
             <li>Interstellar</li>
             <li>Shutter Island</li>
             <li>The Dark Knight</li>
-        </ol>
-        <h3>My Software Preferences</h3>
-        <dl>
-            <dt>Operating System</dt>
-            <dd>- Linux</dd>
-            <dt>Editor</dt>
-            <dd>- Visual Studio Code</dd>
-            <dt>Browser</dt>
-            <dd>Firefox</dd>
-        </dl>
+        </ol> <br>
+        <h3>My Language Picks</h3>
+       <table style="display: inline-flex;">
+           <tr>
+               <th>Frontends</th>
+               <th>Backends</th>
+               <th>Database</th>
+           </tr>
+           <tr>
+               <td>Kotlin</td>
+               <td>Ruby on Rails</td>
+               <td>MongoDB</td>
+           </tr>
+           <tr>
+                <td>Go</td>
+                <td>Django</td>
+                <td>Apache CouchDB</td>
+           </tr>
+           <tr>
+                <td>Vanilla JS</td>
+                <td>Go</td>
+                <td>Couchbase</td>
+           </tr>
+       </table>
+        </dl><br><br>
+
+        <h3>My Linux Desktop</h3>
+        <p>Below is the screenshot of my productive Linux Desktop Environment</p>
+        <a target="_blank" href="http://infotech.scu.edu.au/~dupadh11/images/myDesktop.png">
+            <!-- Max width for responsive because it would float ouside when zoomed out-->
+            <img src="http://infotech.scu.edu.au/~dupadh11/images/myDesktop.png" alt="my Linux Desktop"
+                style="max-width: 250px;width: 350px;">
+        </a><br><br>
+
+        <h3>GitHub</h3>
+        <p>This Website is also hosted in github and there are so many commits done by my personal account and the student account so that
+            may clarify the project was done from scratch and is rough around the edges.
+            <a target="_blank" href="https://github.com/23771774/Web-Development-I-ISYS1001-Session-12021/tree/main/dupadhyay11_ISYS1001_Ass1/Assignment_1">The link to github</a>
+        </p>
+
         <h3>My Famous YouTube Video</h3>
         <p>If you click on the video it plays. But, if you click on the link in the video it opens to the
             different window as requested.
@@ -71,7 +113,7 @@
             allowfullscreen>
         </iframe>
         <p>Subscribe my YouTube Channel <button id="decor-link"><a
-                    href="https://www.youtube.com/channel/UCrZazniabMscU3mczxl36Ow">here</button></a>.</p>
+                    href="https://www.youtube.com/channel/UCrZazniabMscU3mczxl36Ow">here</button></a></p>
         <h2>Contact Me</h2>
         <p>
             Email me at:
@@ -79,11 +121,19 @@
         </p>
 
 
-        <address id="to-the-right">
+        <address id="ending">
             Written by Diggaj Upadhyay<br>
             https://diggajupadhyay.com<br>
             Westralia
         </address>
+
+        <footer>
+            <p>
+            <footer>&copy; Copyright 2021 <a id="foot_cred" href="http://infotech.scu.edu.au/~dupadh11/">dupadh11</a>
+            </footer>
+            </p>
+        </footer>
+
     </div>
 
 
