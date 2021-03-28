@@ -66,6 +66,10 @@ h4 {
     font-size: 20px;
     color: #1fdf44;
 }
+h5 {
+    text-align: left;
+    color:honeydew;
+}
 p {
     text-align: center;
 }
@@ -177,3 +181,31 @@ input[type=text], select, textarea {
     background-color: #f2f2f2;
     padding: 20px;
   }
+
+
+  /* Resume Page */
+  #hero::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .hero-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+  }
+
+/* Web Skills Page */
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+  
+.html5 {width: 85%; background-color: #4CAF50;}
+.css3 {width: 75%; background-color: #2196F3;}
+.js {width: 35%; background-color: #f44336;}
+.wordpress {width: 55%; background-color: #808080;}
