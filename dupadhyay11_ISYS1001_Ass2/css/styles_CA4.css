@@ -1,134 +1,12 @@
 * {box-sizing: border-box;}
 
 body {
-    /* Source of the background image can be found here: https://unsplash.com/photos/FwNUSwJDZIQ . Author: Laney Smith; @laney1smith */
-    background-image: url(https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 2em auto;
+    margin: 0em auto;
     font-family: .9em/1.1 'Cantarell', sans-serif;
-    font-weight: normal;
-    font-size: large;
-    color: #5fe06d;
-}
-
-.navbar {
-    /*  Source of the background image can be found here: https://fedoraproject.org/w/uploads/6/6d/F33_wallpaper_night.jpg . Credits to @teamfedora */
-    background-image: url("https://fedoraproject.org/w/uploads/6/6d/F33_wallpaper_night.jpg");
-    padding: 2px;
-    min-height: 50px;
-    list-style: none; 
-    text-align: center;
-}
-
-#header {
-    color: #fff;
-    display: inline-flex; 
-    position: relative; 
-    padding: 20px 0;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-#header:hover {
-    color: #e4ca73;
-}
-
-.container {
-    column-count: 2;
-    background-color:darkslateblue;
-    position: relative;
-    top: 10px;
-    padding: 20px;
-}
-
-h1 {
-    font-weight: bold;
-    font-size: xx-large;
-    font-style: normal;
-    color: #ccaf30;
-}
-h2 {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: x-large;
-    font-style: normal;
-    text-align: center;
-    text-decoration: underline double wheat;
-}
-h3 {
-    text-decoration: underline wavy wheat;
-}
-h4 {
-    font-weight: 500;
-    font-style: oblique;
-    font-size: 20px;
-    color: #1fdf44;
-}
-h5 {
-    text-align: left;
-    color:honeydew;
-}
-p {
-    text-align: center;
-}
-
-
-ul {
-    list-style-type: square;
-}
-
-ol {
-    letter-spacing: 2px;
-    list-style-type: lower-roman;
-}
-
-iframe {
-    position:relative;
-}
-
-#decor-link {
-    color: white;
-    background: transparent;
-}
-
-a {
-    text-transform: uppercase;
-    color: white;
-}
-
-a:hover {
-    color: red;
-    cursor: pointer;
-}
-
-#ending {
-    text-align: right;
-}
-
-#lekh {
-    background: transparent;
-    color: #fff;
-    text-decoration: snow underline;
-}
-
-/* This was such a pain to make because of so much links conflicting with this */
-#foot_cred {
-    text-decoration: none;
-}
-
-footer {
-    text-align: center;
-}
-
-
-h2,.white{
-    color: #fff;
 }
 
 ul.breadcrumb {
+    text-align: center;
     padding: 10px 16px;
     list-style: none;
 }
@@ -142,48 +20,50 @@ ul.breadcrumb li+li:before {
     content: "/\00a0";
 }
 ul.breadcrumb li a {
-    color: rgb(236, 234, 234);
+    color: rgb(10, 10, 10);
     text-decoration: none;
 }
 ul.breadcrumb li a:hover {
-    color: #dfc534;
+    outline: 1px teal solid;
+    border: 12px #eee solid;
+    background-color: #eee;
+    color: rgb(133, 133, 133);
     text-decoration: underline;
 }
-
-
-/* Contact Form */
-/* All credits to W3School */
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
   
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+.logo {
+    height: auto;
+    width:50px;
+}
   
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
+section {
+    display:flex;
+}
   
-  /* .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  } */
+.article {
+    background-color: #eee;
+    padding: 0 7px;
+    flex: 3 200px;
+}
+  
+.article:nth-of-type(2) {
+    flex: 1 100px;
+}
 
+  /* Styling headers, paragraph and fonts */
+h3 {
+    background-color: #eee;
+    border: 2px lightblue solid;
+    text-align: center;
+}
 
+h2 {
+    background-color: #eee;
+    padding: 0 3%;
+    border: 2px lightblue solid;
+}
+
+  
   /* Resume Page */
   #hero::after {
     content: "";
