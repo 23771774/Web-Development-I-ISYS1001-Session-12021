@@ -13,3 +13,9 @@ function scrollFunction() {
     document.getElementById("navbar").style.padding = "30px 10px";
   }
 }
+
+/* toggle dark mode on */
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+} 
