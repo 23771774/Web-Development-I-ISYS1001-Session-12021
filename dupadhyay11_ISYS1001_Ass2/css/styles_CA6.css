@@ -127,6 +127,61 @@ footer {
     height: 300px;
 }
 
+
+.fa {
+    padding: 20px;
+    font-size: 60px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+
+
+.myResume {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.myResume td, .myResume th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+.myResume tr:nth-child(even){background-color: #f2f2f2;}
+  
+.myResume tr:hover {background-color: #ddd;}
+  
+.myResume th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2196F3;
+    color: white;
+}
+
+
 /* Web Skills Page */
 .skills {
     text-align: right;
