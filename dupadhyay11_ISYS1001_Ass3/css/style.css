@@ -1,0 +1,197 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0em auto;
+    font: 0.4em/1.1;
+    font-family: 'Cantarell', sans-serif;
+}
+
+ul.breadcrumb {
+    text-align: center;
+    padding: 10px 16px;
+    list-style: none;
+}
+ul.breadcrumb li {
+    display: inline-block;
+    font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+    padding: 12px;
+    color: #000;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    outline: 1px teal solid;
+    border: 12px #eee solid;
+    background-color: #eee;
+    color: rgb(133, 133, 133);
+    text-decoration: underline;
+    border-radius: 15px;
+}
+  
+.logo {
+    height: auto;
+    width:50px;
+}
+  
+section {
+    display:flex;
+}
+  
+.article {
+    background-color: #eee;
+    padding: 0 7px;
+    flex: 1 200px;
+}
+  
+.article:nth-of-type(2) {
+    flex: 2 200px;
+}
+
+/* Making myself */
+.myhero {
+    position: relative;
+    width: auto;
+}
+  
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 5%;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.myhero:hover .image {
+    opacity: 0.3;
+}
+  
+.myhero:hover .middle {
+    opacity: 1;
+}
+  
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+  /* Styling headers, paragraph and fonts */
+h3 {
+    background-color: #eee;
+    border: 2px lightblue solid;
+    text-align: center;
+    border-radius: 15px;
+}
+
+h2 {
+    background-color: #eee;
+    padding: 0 3%;
+    border: 2px lightblue solid;
+    border-radius: 15px;
+}
+
+footer {
+    text-align: center;
+}
+  
+/* Resume Page */
+#hero::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hero-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 60px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+
+
+.myResume {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.myResume td, .myResume th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+.myResume tr:nth-child(even){background-color: #f2f2f2;}
+  
+.myResume tr:hover {background-color: #ddd;}
+  
+.myResume th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2196F3;
+    color: white;
+}
+
+
+/* Web Skills Page */
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+  
+.html5 {width: 85%; background-color: #4CAF50;}
+.css3 {width: 75%; background-color: #2196F3;}
+.js {width: 35%; background-color: #f44336;}
+.wordpress {width: 55%; background-color: #808080;}
+
