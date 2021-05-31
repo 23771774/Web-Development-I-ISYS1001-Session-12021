@@ -208,9 +208,11 @@ footer {
 .fa-linkedin {
     background: #007bb5;
     color: white;
-  }
+}
 
-
+.main-table {
+    max-width: 100%;
+}
 
 .myResume {
     border-collapse: collapse;
