@@ -9,14 +9,6 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <style>
-        .header {
-            padding: 10px;
-            text-align: center;
-            background: #007bb5;
-            color: white;
-            font-size: 30px;
-        }
-
         .flex-container {
             display: flex;
             background-color: #f6f5f4;
@@ -28,14 +20,21 @@
             padding: 20px;
         }
 
-        form {
-            border: 3px solid #f1f1f1;
-            font-family: Arial;
+        .left-sidebar {
+            width: 25%;
+            color: #f6f5f4;
         }
 
-        .container {
-            padding: 20px;
-            background-color: #f1f1f1;
+        .right-sidebar {
+            width: 25%;
+        }
+
+        .content {
+            width: 50%;
+            background-color: ##f6f5f4;
+            padding: 10px 20px;
+            overflow: auto;
+            font-size: 14px;
         }
 
         input[type=text],
@@ -64,37 +63,100 @@
     </style>
 </head>
 
-<body>
+<body onload="myFunction()">
     <div class="header">
         <h1>King's Music Store</h1>
-        <p>Sign Up for Newsletter!</p>
+        <p>Sign up for Newsletter!</p>
     </div>
 
     <div class="flex-container">
         <div class="left-sidebar">
-            <h3>Imp Notice</h3>
+            <h3>PLEASE READ THIS</h3>
+            <hr>
+            <p>Welcome to the King's Music Store Subscription Page.</p>
+            <hr>
+            <p>IMP NOTE:</p>
+            <ul style="text-transform: uppercase;">
+                <li>Please input manually if your desired Genre is not included under 
+                    the "Other" field.
+                </li>
+                <li>please fill out the comment box to let us know what other genre should
+                    be added.
+                </li>
+            </ul>
         </div>
 
-        <div class="main-content">
-            <form action="/action_page.php">
-                <div class="container">
-                    <h2>Subscribe to our Newsletter</h2>
-                </div>
+        <div class="content">
+            <h1>Fill in the form below:</h1>
+            <form method="post" name="myform" action="http://infotech.scu.edu.au/cgi-bin/echo_form" onsubmit="return validateForm()">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <table class="formtable">
+                        <tr>
+                            <th>First Name:</th>
+                            <td><input type="text" name="fname" id="fname"></td>
+                        </tr>
+                        <tr>
+                            <th>Last Name:</th>
+                            <td><input type="text" name="lname" id="lname"></td>
+                        </tr>
+                        <tr>
+                            <th>Age:</th>
+                            <td>
+                                <select size="1" name="age" id="age">
+                                    <option value="under 18">Under 18</option>
+                                    <option value="18-25">18 to 25</option>
+                                    <option value="26-35">26 to 35</option>
+                                    <option value="36-45">36 to 45</option>
+                                    <option value="46-55">46 to 55</option>
+                                    <option value="over55">over 55</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Email:</th>
+                            <td><input type="email" name="useremail" id="useremail"></td>
+                        </tr>
+                        <tr>
+                            <th>Password:</th>
+                            <td><input type="password" name="userpass" id="userpass"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                &nbsp;<br>
 
-                <div class="container" style="background-color:white">
-                    <input type="text" placeholder="Name" name="name" required>
-                    <input type="text" placeholder="Email address" name="mail" required>
-                    <label>
-                        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-                    </label>
-                </div>
+                <fieldset >
+                    <legend>I am interested in:</legend>
+                    <input type="checkbox" name="breakfast" id="breakfast" value="yes"> Heavy Metal<br>
+                    <input type="checkbox" name="lunch" id="lunch" value="yes"> Country<br>
+                    <input type="checkbox" name="dinner" id="dinner" value="yes"> Western<br>
+                    <input type="checkbox" name="catered" id="catered" value="yes"> Rock & Roll<br>
+                    <input type="checkbox" name="specials" id="specials" value="yes"> Folk<br>
+                    <input type="checkbox" name="specials" id="specials" value="yes"> Pop<br>
+                    <input type="checkbox" name="specials" id="specials" value="yes"> Blues<br>
+                    <input type="checkbox" name="specials" id="specials" value="yes"> Jazz<br>
+                    <input type="checkbox" name="specials" id="specials" value="yes"> Disco<br>
+                    <input type="checkbox" name="specials" id="specials" value="yes"> Opera<br>
+                    <br>
+                    <tr>
+                        <th>Other</th>
+                        <td><input type="text" name="userInput" id="userInput"></td>
+                    </tr>
+  
+                </fieldset>
+                &nbsp;<br>
 
-                <div class="container">
-                    <input type="submit" value="Subscribe">
-                </div>
+                Give us a Feedback<br>
+                <textarea name="commentbox" id="commentbox" cols="60" rows="3">Enter the comment here..</textarea><br>
+
+                <!-- hidden fields needed for script -->
+                <input type="hidden" name="sendto" id="sendto" value="myaddress@somewhere.com">
+
+                <input type="submit" value="Sign up now"> <input type="reset">
+                <!-- end of form here -->
             </form>
-        </div>
 
+        </div>
         <div class="right-sidebar article sidebar">
             <a class="active" href="index.html">About</a>
             <a href="resume.html">Resume</a>
@@ -102,9 +164,6 @@
             <a href="form.html">Form</a>
         </div>
     </div>
-
-
-
 
     <script src="./script/script.js"></script>
 </body>

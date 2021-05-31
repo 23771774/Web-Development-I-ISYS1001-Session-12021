@@ -1,9 +1,10 @@
 * {box-sizing: border-box;}
 
 body {
+    background-color: #f6f5f4;
     margin: 0em auto;
-    font: 0.4em/1.1;
     font-family: 'Cantarell', sans-serif;
+    font-size: 18px;
 }
 
 ul.breadcrumb {
@@ -20,12 +21,12 @@ ul.breadcrumb li+li:before {
     color: #000;
     content: "/\00a0";
 }
-ul.breadcrumb li a {
+ul.breadcrumb li a.active {
     color: rgb(10, 10, 10);
     text-decoration: none;
 }
 ul.breadcrumb li a:hover {
-    outline: 1px teal solid;
+    outline: 1px #55acee solid;
     border: 12px #eee solid;
     background-color: #eee;
     color: rgb(133, 133, 133);
@@ -43,7 +44,6 @@ section {
 }
   
 .article {
-    background-color: #eee;
     padding: 0 7px;
     flex: 1 200px;
 }
@@ -94,20 +94,70 @@ section {
     padding: 16px 32px;
 }
 
+/* Sidebar */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  background-color: #f6f5f4;
+  height: 100%;
+}
+
+.sidebar a {
+  text-align: center;
+  display: block;
+  color: black;
+  padding: 26px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #007bb5;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #55acee;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
   /* Styling headers, paragraph and fonts */
 h3 {
-    background-color: #eee;
-    border: 2px lightblue solid;
     text-align: center;
-    border-radius: 15px;
 }
 
 h2 {
     background-color: #eee;
     padding: 0 3%;
-    border: 2px lightblue solid;
-    border-radius: 15px;
+    border: 2px #007bb5 solid;
 }
+
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #007bb5;
+    color: white;
+    font-size: 30px;
+}
+
 
 footer {
     text-align: center;
